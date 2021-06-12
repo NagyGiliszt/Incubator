@@ -74,7 +74,7 @@ ClickEncoder encoder(pinA, pinB, pinSw, STEPS);
 #include <DHT_U.h>
 
 #define DHTPIN 8        // DHTXX data
-#define DHTTYPE DHT22   // DHT XX
+#define DHTTYPE DHT22   // DHT type
 
 //DHT dht(DHTPIN, DHTTYPE);
 DHT_Unified dht(DHTPIN, DHTTYPE);
@@ -144,8 +144,8 @@ double changeError = 0.0;
 */
 struct StoreData_H {
    double kozep;         // Célhőmérséklet
-   double hyst;          // Hiszterézis
-   int hum;              // páratartalom
+   double hyst;          // Eltérés a célhőmérséklethez képest(LEDmeleg, LEDhideg)
+   int hum;              // Páratartalom
    int pwm_vent;         // Ventillátor
    int runflag;          // Inkubálás fusson e, vagy sem
 };
