@@ -695,19 +695,17 @@ $Comp
 L Connector_Generic:Conn_01x04 J5
 U 1 1 60C290E8
 P 2300 3100
-F 0 "J5" H 2380 3092 50  0000 L CNN
-F 1 "NTC" H 2380 3001 50  0000 L CNN
+F 0 "J5" H 2250 2800 50  0000 L CNN
+F 1 "NTC" H 2250 3300 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 2300 3100 50  0001 C CNN
 F 3 "~" H 2300 3100 50  0001 C CNN
 	1    2300 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 2850 2100 2850
-Wire Wire Line
 	2100 2850 2100 3000
 Wire Wire Line
-	2100 3100 1600 3100
+	2100 3100 1800 3100
 Wire Wire Line
 	1600 3350 1900 3350
 Wire Wire Line
@@ -815,8 +813,8 @@ $Comp
 L Connector:Conn_01x02_Female J9
 U 1 1 60D1C98E
 P 10700 2000
-F 0 "J9" H 10728 2026 50  0000 L CNN
-F 1 "pwm_heat" H 10728 1935 50  0000 L CNN
+F 0 "J9" H 10500 1850 50  0000 L CNN
+F 1 "pwm_heat" H 10250 2100 50  0000 L CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 10700 2000 50  0001 C CNN
 F 3 "~" H 10700 2000 50  0001 C CNN
 	1    10700 2000
@@ -990,8 +988,8 @@ $Comp
 L Connector:Conn_01x02_Female J10
 U 1 1 60E2717A
 P 10700 3900
-F 0 "J10" H 10728 3926 50  0000 L CNN
-F 1 "pwm_vent" H 10728 3835 50  0000 L CNN
+F 0 "J10" H 10550 3700 50  0000 L CNN
+F 1 "pwm_vent" H 10500 4000 50  0000 L CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 10700 3900 50  0001 C CNN
 F 3 "~" H 10700 3900 50  0001 C CNN
 	1    10700 3900
@@ -1182,8 +1180,8 @@ $Comp
 L Connector_Generic:Conn_01x04 J11
 U 1 1 60EA5340
 P 5850 5400
-F 0 "J11" H 5930 5392 50  0000 L CNN
-F 1 "Front_Led" H 5930 5301 50  0000 L CNN
+F 0 "J11" H 5800 5050 50  0000 L CNN
+F 1 "Front_Led" H 5750 5650 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5850 5400 50  0001 C CNN
 F 3 "~" H 5850 5400 50  0001 C CNN
 	1    5850 5400
@@ -1491,7 +1489,7 @@ Wire Notes Line
 Wire Notes Line
 	7300 3700 7300 5850
 Text Notes 7450 5100 0    50   ~ 10
-Ventillátor 4pin 5V/ 12V-24V\n
+Ventillátor 4pin 5V/ 12V/ 24V\n
 NoConn ~ 8300 5400
 $Comp
 L Connector_Generic:Conn_01x03 J13
@@ -1620,11 +1618,11 @@ F 3 "" H 7650 750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 750  8250 750 
-Text Label 1700 3350 0    50   ~ 0
+Text Label 2000 2750 0    50   ~ 0
 AD2
-Text Label 1750 3100 0    50   ~ 0
+Text Label 2000 2600 0    50   ~ 0
 AD1
-Text Label 1750 2850 0    50   ~ 0
+Text Label 2000 2450 0    50   ~ 0
 AD0
 Text Label 8000 1350 0    50   ~ 0
 AD5
@@ -1698,4 +1696,159 @@ Wire Wire Line
 	1050 4550 1900 4550
 Wire Wire Line
 	1050 4100 1050 4200
+Wire Notes Line
+	2900 3000 2900 3100
+Wire Notes Line
+	2850 3100 2850 3250
+Wire Notes Line
+	2850 3250 2950 3250
+Wire Notes Line
+	2950 3250 2950 3100
+Wire Notes Line
+	2850 3100 2950 3100
+Wire Notes Line
+	2700 3100 2700 3150
+Wire Notes Line
+	2750 3300 2650 3300
+Wire Notes Line
+	2650 3300 2650 3150
+Wire Notes Line
+	2650 3150 2750 3150
+Wire Notes Line
+	2750 3150 2750 3300
+Wire Notes Line
+	2550 3200 2550 3350
+Wire Notes Line
+	2600 3500 2500 3500
+Wire Notes Line
+	2500 3500 2500 3350
+Wire Notes Line
+	2500 3350 2600 3350
+Wire Notes Line
+	2600 3350 2600 3500
+Wire Notes Line
+	2550 3500 2550 3550
+Wire Notes Line
+	2700 3300 2700 3550
+Wire Notes Line
+	2900 3250 2900 3550
+Wire Notes Line
+	2450 3300 2450 3550
+Wire Notes Line
+	2450 3300 2400 3300
+Wire Notes Line
+	2400 3200 2550 3200
+Wire Notes Line
+	2400 3100 2700 3100
+Wire Notes Line
+	2400 3000 2900 3000
+Wire Notes Line
+	2450 3550 2900 3550
+Text Notes 2400 3650 0    50   ~ 0
+3x10k NTC 3950
+Wire Notes Line
+	10800 2000 11000 2000
+Wire Notes Line
+	11000 2500 10850 2500
+Wire Notes Line
+	10850 2500 10850 2100
+Wire Notes Line
+	10850 2100 10800 2100
+Text Notes 11150 2500 1    50   ~ 0
+Heating element
+Wire Notes Line
+	10950 3900 10950 4000
+Wire Notes Line
+	11050 4000 11050 4250
+Wire Notes Line
+	11050 4250 10850 4250
+Wire Notes Line
+	10850 4250 10850 4000
+Wire Notes Line
+	10850 4000 11050 4000
+Wire Notes Line
+	10950 4250 10950 4350
+Wire Notes Line
+	10950 4350 10800 4350
+Wire Notes Line
+	10800 4350 10800 4000
+Wire Notes Line
+	10800 4000 10750 4000
+Wire Notes Line
+	10750 3900 10950 3900
+Text Notes 11000 4250 1    50   ~ 0
+Motor
+Text Notes 10900 1950 0    50   ~ 0
++
+Text Notes 10950 3900 0    50   ~ 0
++
+Wire Wire Line
+	1600 2850 1700 2850
+Wire Wire Line
+	1900 3200 1900 2750
+Wire Wire Line
+	1900 2750 2200 2750
+Connection ~ 1900 3200
+Wire Wire Line
+	1800 3100 1800 2600
+Wire Wire Line
+	1800 2600 2200 2600
+Connection ~ 1800 3100
+Wire Wire Line
+	1800 3100 1600 3100
+Wire Wire Line
+	1700 2850 1700 2450
+Wire Wire Line
+	1700 2450 2200 2450
+Connection ~ 1700 2850
+Wire Wire Line
+	1700 2850 2100 2850
+Text Notes 2250 2450 0    50   ~ 0
+Air temp
+Text Notes 2250 2600 0    50   ~ 0
+Air temp
+Text Notes 2250 2750 0    50   ~ 0
+Heating element temp
+Text Notes 6000 5350 0    50   ~ 0
+--|>|--
+Text Notes 6000 5450 0    50   ~ 0
+--|>|--
+Text Notes 6000 5550 0    50   ~ 0
+--|>|--
+Wire Notes Line
+	6400 5600 6050 5600
+Wire Notes Line
+	6400 5300 6400 5600
+Text Notes 6450 5550 0    50   ~ 0
+Green led\nBlue led\nRed led
+Wire Notes Line
+	11000 2000 11000 2100
+Wire Notes Line
+	11000 2100 11050 2100
+Wire Notes Line
+	11050 2100 11050 2150
+Wire Notes Line
+	11050 2150 10950 2150
+Wire Notes Line
+	10950 2150 10950 2200
+Wire Notes Line
+	10950 2200 11050 2200
+Wire Notes Line
+	11050 2200 11050 2250
+Wire Notes Line
+	11050 2250 10950 2250
+Wire Notes Line
+	10950 2250 10950 2300
+Wire Notes Line
+	10950 2300 11050 2300
+Wire Notes Line
+	11050 2300 11050 2350
+Wire Notes Line
+	11050 2350 10950 2350
+Wire Notes Line
+	10950 2350 10950 2400
+Wire Notes Line
+	10950 2400 11000 2400
+Wire Notes Line
+	11000 2400 11000 2500
 $EndSCHEMATC
