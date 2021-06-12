@@ -74,7 +74,7 @@ ClickEncoder encoder(pinA, pinB, pinSw, STEPS);
 #include <DHT_U.h>
 
 #define DHTPIN 8        // DHTXX data
-#define DHTTYPE DHT22   // DHT type
+#define DHTTYPE DHT22   // DHT XX
 
 //DHT dht(DHTPIN, DHTTYPE);
 DHT_Unified dht(DHTPIN, DHTTYPE);
@@ -124,9 +124,9 @@ int outMax = 255;  // pwm max: 255
 /*
   LED
 */
-uint8_t LEDR = 17;      // Inkubálás fut led (A3)
-uint8_t LEDhideg = 18;  // túl hideg (A4)
-uint8_t LEDmeleg = 19;  // túl meleg (A5)
+uint8_t LEDR = 0;      // Inkubálás fut led
+uint8_t LEDhideg = 1;  // túl hideg
+uint8_t LEDmeleg = 7;  // túl meleg
 
 /* PID  */
 double Kp = 0.7;      // Hibajel(P)
@@ -144,8 +144,8 @@ double changeError = 0.0;
 */
 struct StoreData_H {
    double kozep;         // Célhőmérséklet
-   double hyst;          // Eltérés a célhőmérséklethez képest(LEDmeleg, LEDhideg)
-   int hum;              // Páratartalom
+   double hyst;          // Hiszterézis
+   int hum;              // páratartalom
    int pwm_vent;         // Ventillátor
    int runflag;          // Inkubálás fusson e, vagy sem
 };
